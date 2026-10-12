@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sowmya K — Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer building production software across React, Angular, .NET Core and SQL Server.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--a:#8b5cf6;--ar:139,92,246;--bg:#09090c;--card:#121217;--line:#25252e;--tx:#ecebf2;--mu:#9a98a8;--d:'Syne',sans-serif;--b:'Outfit',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:300 1.05rem/1.65 var(--b);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(60% 50% at 15% 10%,rgba(var(--ar),.18),transparent 70%),radial-gradient(50% 40% at 90% 40%,rgba(60,40,140,.16),transparent 70%),radial-gradient(60% 50% at 40% 100%,rgba(var(--ar),.1),transparent 70%)}
+body::after{content:"";position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.07;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+main,footer{position:relative;z-index:1}
+section{padding:6rem 1.25rem;max-width:1180px;margin:auto}
+h2{font:800 clamp(2rem,5vw,3.4rem)/1.05 var(--d);margin-bottom:2.5rem;letter-spacing:-.02em}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;backdrop-filter:blur(14px);background:rgba(9,9,12,.55)}
+.logo{font:800 1.3rem var(--d);cursor:pointer;background:none;border:0;color:var(--tx);position:relative}
+.logo i{color:var(--a);font-style:normal}
+.tag{position:absolute;left:0;top:130%;font:400 .75rem var(--b);white-space:nowrap;background:var(--a);color:#fff;padding:.2rem .6rem;border-radius:99px;opacity:0;transform:translateY(-6px);transition:.3s;pointer-events:none}
+.tag.on{opacity:1;transform:none}
+nav ul{display:none;list-style:none;gap:1.8rem;font-size:.92rem}
+nav ul a{color:var(--mu);padding:.3rem 0;border-bottom:1px solid transparent;transition:.25s}
+nav ul a.act,nav ul a:hover{color:var(--tx);border-color:var(--a)}
+@media(min-width:820px){nav ul{display:flex}nav{padding:1rem 3rem}}
+/* progress */
+#pb{position:fixed;top:0;left:0;height:3px;width:100%;z-index:60;background:linear-gradient(90deg,var(--a),#e879f9);transform-origin:0 50%;transform:scaleX(0)}
+#pv{position:fixed;right:10px;top:0;width:3px;height:100%;z-index:60;display:none}
+#pv b{position:absolute;inset:0 0 auto 0;height:100%;background:linear-gradient(180deg,var(--a),#e879f9);transform-origin:50% 0;transform:scaleY(0)}
+.dot{position:absolute;width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 12px 3px var(--a)}
+#pb .dot{display:none}
+#pbw{position:fixed;top:0;left:0;width:100%;height:3px;z-index:60}
+#pbd{left:0;top:-3px}#pvd{left:-3px;top:0}
+@media(min-width:820px){#pv{display:block}}
+/* hero */
+#hero{min-height:100svh;max-width:none;display:flex;flex-direction:column;justify-content:center;padding:7rem 1.25rem 4rem;position:relative}
+#hero>*:not(canvas){position:relative;z-index:2;max-width:1180px;width:100%;margin-inline:auto}
+#bg{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.av{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font:800 1.2rem var(--d);border:1.5px solid var(--a);box-shadow:0 0 24px rgba(var(--ar),.45);background:#15131f;margin-bottom:1.5rem!important;margin-inline:auto 0!important;margin-left:max(0px,calc((100% - 1180px)/2))!important;width:64px!important}
+h1{font:800 clamp(4rem,17vw,13rem)/.86;letter-spacing:-.045em}
+h1 span{display:block}
+h1 .o{-webkit-text-stroke:1.5px var(--a);color:transparent}
+.role{font:600 clamp(1.1rem,2.6vw,1.7rem) var(--d);margin:1.6rem 0 .6rem}
+.role em{font-style:normal;color:var(--a);display:inline-block;min-width:6.4ch}
+.vp{max-width:46ch;color:var(--mu);margin-bottom:2rem}
+.btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.9rem 1.7rem;border-radius:99px;font-weight:500;border:1px solid var(--a);transition:background .3s,box-shadow .3s;will-change:transform}
+.btn.p{background:var(--a);color:#fff;box-shadow:0 0 30px rgba(var(--ar),.4)}
+.btn:hover{box-shadow:0 0 40px rgba(var(--ar),.65)}
+.btn:not(.p):hover{background:rgba(var(--ar),.15)}
+.in{opacity:0;transform:translateY(26px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i)*110ms + 150ms)}
+@keyframes up{to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.v{opacity:1;transform:none}
+/* bento */
+.bento{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
+.cell{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.5rem;overflow:hidden;transition:border-color .3s,transform .25s ease-out;transform-style:preserve-3d}
+.cell::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(var(--ar),.22),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.cell:hover{border-color:rgba(var(--ar),.7)}.cell:hover::before{opacity:1}
+.cell>*{position:relative}
+.cell.w{grid-column:span 2}
+.big{font:800 clamp(2.6rem,6vw,4rem)/1 var(--d);color:var(--a)}
+.lab{color:var(--mu);font-size:.92rem;margin-top:.4rem}
+.cell h3{font:600 1.05rem var(--d);margin-bottom:.9rem}
+.bio p+p{margin-top:.9rem}
+.bio{color:#cfcdda}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips span{font-size:.82rem;padding:.25rem .75rem;border-radius:99px;border:1px solid rgba(var(--ar),.4);background:rgba(var(--ar),.08)}
+@media(min-width:820px){
+ #about .bento{grid-template-columns:repeat(4,1fr)}
+ #about .bio{grid-column:span 2;grid-row:span 2}
+ #skills .bento{grid-template-columns:repeat(6,1fr)}
+ #skills .c1{grid-column:span 3}#skills .c2{grid-column:span 3}#skills .c3,#skills .c4{grid-column:span 2}#skills .c5{grid-column:span 2}#skills .c6{grid-column:span 6}
+}
+/* marquee */
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:1.1rem 0;position:relative;z-index:1;background:rgba(var(--ar),.05)}
+.mt{display:flex;gap:3rem;width:max-content;animation:mq 38s linear infinite}
+.mq:hover .mt{animation-play-state:paused}
+.mt span{font:800 clamp(1.4rem,3vw,2.2rem) var(--d);white-space:nowrap;color:transparent;-webkit-text-stroke:1px var(--mu);transition:.3s}
+.mt span:hover{color:var(--a);-webkit-text-stroke-color:var(--a)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* projects */
+.pg{display:grid;gap:1rem}
+@media(min-width:820px){.pg{grid-template-columns:1.3fr 1fr 1fr}.pg .cell:first-child{grid-row:span 1}}
+.idx{font:800 .95rem var(--d);color:var(--a);margin-bottom:2rem}
+.cell h3.pn{font-size:1.35rem;margin-bottom:.6rem}
+.cell p.pd{color:#b9b7c7;font-size:.97rem;margin-bottom:1.2rem}
+/* timeline */
+.tl{border-left:1px solid var(--line);margin-left:.5rem;padding-left:2rem}
+.ti{position:relative;margin-bottom:3rem}
+.ti::before{content:"";position:absolute;left:calc(-2rem - 5px);top:.55rem;width:9px;height:9px;border-radius:50%;background:var(--a);box-shadow:0 0 14px var(--a)}
+.ti h3{font:800 1.5rem var(--d)}
+.ti .m{color:var(--a);font-size:.92rem;margin:.2rem 0 .8rem}
+.ti li{margin:.4rem 0 .4rem 1.1rem;color:#cfcdda;max-width:70ch}
+.ti li::marker{color:var(--a)}
+/* edu */
+.two{display:grid;gap:2rem}
+@media(min-width:820px){.two{grid-template-columns:1.2fr 1fr}}
+.two h3{font:600 1.1rem var(--d);margin-bottom:1rem;color:var(--a)}
+.two li{list-style:none;padding:.9rem 0;border-bottom:1px solid var(--line)}
+.two li small{display:block;color:var(--mu)}
+/* closer */
+#contact{text-align:center;position:relative}
+#contact::before{content:"";position:absolute;left:50%;top:50%;width:min(700px,90vw);height:420px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(var(--ar),.35),transparent);filter:blur(30px);z-index:-1}
+#contact h2{font-size:clamp(2.4rem,8vw,6rem);max-width:14ch;margin-inline:auto}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem 1.6rem;margin-top:2.5rem;color:var(--mu)}
+.links a:hover{color:var(--a)}
+footer{text-align:center;padding:2rem 1rem 3rem;color:var(--mu);font-size:.85rem}
+/* cursor */
+#cd,#cr{position:fixed;top:0;left:0;pointer-events:none;z-index:200;display:none;border-radius:50%}
+#cd{width:7px;height:7px;background:var(--a);margin:-3.5px 0 0 -3.5px}
+#cr{width:36px;height:36px;margin:-18px 0 0 -18px;border:1.5px solid rgba(var(--ar),.7);transition:width .25s,height .25s,margin .25s,background .25s}
+#cr.h{width:64px;height:64px;margin:-32px 0 0 -32px;background:rgba(var(--ar),.15)}
+@media(hover:hover) and (pointer:fine){body.fx *{cursor:none!important}body.fx #cd,body.fx #cr{display:block}}
+@media(prefers-reduced-motion:reduce){.in,.rv{animation:none;opacity:1;transform:none;transition:none}.mt{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="cd"></div><div id="cr"></div>
+<div id="pbw"><div id="pb"></div><span class="dot" id="pbd"></span></div>
+<div id="pv"><b></b><span class="dot" id="pvd"></span></div>
+
+<nav>
+ <button class="logo" id="logo" aria-label="Sowmya K — click to change accent color">SK<i>.</i><span class="tag" id="tag"></span></button>
+ <ul>
+  <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+ </ul>
+</nav>
+
+<main>
+<section id="hero">
+ <canvas id="bg" aria-hidden="true"></canvas>
+ <div class="av in" style="--i:0" aria-label="Avatar placeholder">SK</div>
+ <h1><span class="in" style="--i:1">Sowmya</span><span class="in o" style="--i:2">K</span></h1>
+ <p class="role in" style="--i:3"><em id="scr" data-w="Full-Stack">Full-Stack</em> Developer</p>
+ <p class="vp in" style="--i:4">I build and ship production software across frontend, backend and database from enterprise SaaS to a high-traffic consumer site.</p>
+ <div class="btns in" style="--i:5">
+  <a class="btn p mag" href="#experience">See my work</a>
+  <a class="btn mag" href="mailto:ksowmya1803@gmail.com">Get in touch</a>
+ </div>
+</section>
+
+<section id="about">
+ <h2 class="rv">Engineer by training,<br>developer by choice.</h2>
+ <div class="bento rv">
+  <div class="cell bio tilt">
+   <p>I started coding on my own during an Agricultural Engineering degree. That background sharpened how I think about systems and how quickly I pick up unfamiliar domains.</p>
+   <p>Since joining industry in 2023, I've delivered 50+ features for an enterprise SaaS platform (Relias) and a high-traffic consumer site (Burger King India), across React, Angular, TypeScript, C#, .NET Core and SQL Server.</p>
+   <p>I'm looking for a mid-level full-stack or frontend role at a product-driven organisation.</p>
+  </div>
+  <div class="cell tilt"><div class="big"><span data-n="3" data-s="+">0</span></div><div class="lab">years building production software</div></div>
+  <div class="cell tilt"><div class="big"><span data-n="50" data-s="+">0</span></div><div class="lab">production features shipped</div></div>
+  <div class="cell tilt"><div class="big"><span data-n="45" data-s="%">0</span></div><div class="lab">page load time reduction</div></div>
+ </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mt" id="mt"></div></div>
+
+<section id="skills">
+ <h2 class="rv">What I work with</h2>
+ <div class="bento rv">
+  <div class="cell c1 tilt"><h3>Frontend</h3><div class="chips"><span>React</span><span>Redux</span><span>Angular</span><span>RxJS</span><span>TypeScript</span><span>JavaScript (ES6+)</span><span>HTML5</span><span>CSS3</span></div></div>
+  <div class="cell c2 tilt"><h3>Backend and database</h3><div class="chips"><span>C#</span><span>.NET / ASP.NET Core</span><span>SQL Server</span><span>Stored Procedures</span><span>Table Design</span><span>Query Optimisation</span><span>REST APIs</span></div></div>
+  <div class="cell c4 tilt"><h3>Testing</h3><div class="chips"><span>Jest</span><span>Jasmine</span><span>Unit tests</span><span>Integration tests</span></div></div>
+  <div class="cell c5 tilt"><h3>Integrations</h3><div class="chips"><span>CleverTap</span><span>Juspay</span><span>Google Maps API</span><span>AJAX</span></div></div>
+  <div class="cell c6 tilt"><h3>Tooling and familiar</h3><div class="chips"><span>Git</span><span>Webpack</span><span>npm</span><span>VS Code</span><span>Chrome DevTools</span><span>Python</span><span>Node.js basics</span></div></div>
+ </div>
+</section>
+
+<section id="projects">
+ <h2 class="rv">Selected work</h2>
+ <div class="pg rv">
+  <article class="cell tilt"><div class="idx">01</div><h3 class="pn">Relias: enterprise SaaS</h3><p class="pd">Compliance and learning platform for healthcare and public safety. Features across Angular, ASP.NET Core and SQL Server, plus end-to-end German localisation for the DACH region.</p><div class="chips"><span>Angular</span><span>TypeScript</span><span>.NET Core</span><span>SQL Server</span></div></article>
+  <article class="cell tilt"><div class="idx">02</div><h3 class="pn">Burger King India: website</h3><p class="pd">Customer-facing site for one of India's largest QSR chains. Faster pages and zero-downtime releases.</p><div class="chips"><span>React</span><span>Redux</span><span>CleverTap</span><span>Juspay</span><span>Google Maps</span></div></article>
+  <article class="cell tilt"><div class="idx">03</div><h3 class="pn">Burger King India: admin platform</h3><p class="pd">Back-office tool for pricing, promotions and discount management, built for accessibility and cross-browser use.</p><div class="chips"><span>React</span><span>REST APIs</span></div></article>
+ </div>
+</section>
+
+<section id="experience">
+ <h2 class="rv">Experience</h2>
+ <p class="rv" style="color:var(--mu);margin:-1.5rem 0 2.5rem">Application Developer at Divum Corporate Services, a Bangalore product engineering consultancy · July 2023 to present</p>
+ <div class="tl">
+  <div class="ti rv"><h3>Relias</h3><div class="m">Full-stack enterprise SaaS · Angular, .NET Core</div><ul>
+   <li>Shipped 50+ production features across Angular, ASP.NET Core and SQL Server in a team of 8 engineers.</li>
+   <li>Led German (DE) localisation: translation integration, dynamic UI rendering and culture-specific date, number and currency formats.</li>
+   <li>Authored stored procedures from scratch and optimised existing ones for 20% faster queries.</li></ul></div>
+  <div class="ti rv"><h3>Burger King India: customer website</h3><div class="m">React, Redux</div><ul>
+   <li>Cut page load time by 45% with code splitting, lazy loading and asset compression.</li>
+   <li>Integrated CleverTap, Juspay and Google Maps; delivered every release with zero downtime using feature flags.</li></ul></div>
+  <div class="ti rv"><h3>Burger King India: internal admin platform</h3><div class="m">Pricing, promotions and discounts</div><ul>
+   <li>Built the admin panel, boosting operational efficiency by 40%.</li>
+   <li>Integrated backend APIs, reducing data sync latency by 30% and automating key workflows.</li>
+ </div>
+</section>
+
+<section id="education">
+ <h2 class="rv">Education and languages</h2>
+ <div class="two rv">
+    <div><h3>Education</h3><ul><li>MBA Artificial Intelligence and Data Science<small>SRM Institute od Engineering &amp; Technology, Chennai · Jan 2025 to Dec 2026</small></li></ul></div>
+
+  <div><h3>Education</h3><ul><li>B.E. Agricultural Engineering<small>Sri Shakthi Institute of Engineering &amp; Technology, Coimbatore · June 2020 to May 2024</small></li><li>Self-directed software study<small>OOP, DBMS, REST architecture, version control, frontend/backend integration</small></li></ul></div>
+  <div><h3>Languages</h3><ul><li>English<small>Professional</small></li><li>Tamil<small>Native</small></li><li>Kannada</li></ul></div>
+ </div>
+</section>
+
+<section id="contact">
+ <h2 class="rv">Let's build something good.</h2>
+ <div class="btns rv" style="justify-content:center"><a class="btn p mag" href="mailto:ksowmya1803@gmail.com">ksowmya1803@gmail.com</a></div>
+ <div class="links rv">
+  <a href="https://www.linkedin.com/in/sowmya-k-006300206" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/Sowmya180" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://port-folio-sowm.vercel.app" target="_blank" rel="noopener">Portfolio</a>
+  <a href="tel:+916382758620">6382758620</a>
+ </div>
+</section>
+</main>
+<footer>© Sowmya K · Psst, the logo has a few moods. Try clicking it.</footer>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* reveals + count-up */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');e.target.querySelectorAll('[data-n]').forEach(count);io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv').forEach(el=>io.observe(el));
+function count(el){const n=+el.dataset.n,s=el.dataset.s||'';if(rm){el.textContent=n+s;return}const t0=performance.now();(function f(t){const p=Math.min((t-t0)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+(p>=1?s:'');if(p<1)requestAnimationFrame(f)})(t0)}
+/* scramble */
+const sc=$('#scr'),w=sc.dataset.w,ch='!<>-_/[]{}=+*^?#ABCDEFGHIJKLMNOP';
+function scramble(){if(rm)return;let f=0;const id=setInterval(()=>{sc.textContent=[...w].map((c,i)=>i<f/2?c:c==='-'?c:ch[Math.random()*ch.length|0]).join('');if(++f>w.length*2+2){clearInterval(id);sc.textContent=w}},45)}
+setTimeout(scramble,700);sc.addEventListener('mouseenter',scramble);
+/* progress */
+const pb=$('#pb'),pv=$('#pv b'),pbd=$('#pbd'),pvd=$('#pvd');pbd.style.display='block';
+let tk=false;function prog(){const p=scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight);pb.style.transform=`scaleX(${p})`;pv.style.transform=`scaleY(${p})`;pbd.style.left=`calc(${p*100}% - 4px)`;pvd.style.top=`calc(${p*100}% - 4px)`;tk=false}
+addEventListener('scroll',()=>{if(!tk){tk=true;requestAnimationFrame(prog)}},{passive:true});prog();
+/* active nav */
+const links=$$('nav ul a'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('act',a.hash==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+$$('section[id]').forEach(s=>so.observe(s));
+/* glow on cells */
+$$('.cell').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+/* easter egg */
+const th=[['Violet','#8b5cf6','139,92,246'],['Ember','#fb7185','251,113,133'],['Cyan','#22d3ee','34,211,238'],['Lime','#a3e635','163,230,53'],['Amber','#fbbf24','251,191,36']];let ti=0,tt;
+$('#logo').addEventListener('click',()=>{ti=(ti+1)%th.length;const t=th[ti],r=document.documentElement.style;r.setProperty('--a',t[1]);r.setProperty('--ar',t[2]);const g=$('#tag');g.textContent=t[0];g.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>g.classList.remove('on'),1400)});
+/* desktop-only fx */
+if(fine&&!rm){
+ document.body.classList.add('fx');
+ const cd=$('#cd'),cr=$('#cr');let mx=0,my=0,rx=0,ry=0;
+ addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;cd.style.transform=`translate(${mx}px,${my}px)`});
+ (function l(){rx+=(mx-rx)*.15;ry+=(my-ry)*.15;cr.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(l)})();
+ document.addEventListener('pointerover',e=>cr.classList.toggle('h',!!e.target.closest('a,button,.cell')));
+ $$('.tilt').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateX(${-y*6}deg) rotateY(${x*6}deg)`});c.addEventListener('pointerleave',()=>c.style.transform='')});
+ $$('.mag').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
+}
+/* hero canvas: drifting nodes that bend toward the cursor */
+const cv=$('#bg'),cx=cv.getContext('2d');let W,H,pts=[],m={x:-999,y:-999},vis=true;
+function size(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;const n=Math.min(70,W/18|0);pts=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))}
+size();addEventListener('resize',size);
+cv.parentElement.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
+new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(cv);
+function draw(){if(vis){cx.clearRect(0,0,W,H);const a=getComputedStyle(document.documentElement).getPropertyValue('--ar');
+ pts.forEach((p,i)=>{const dx=m.x-p.x,dy=m.y-p.y,d=Math.hypot(dx,dy);if(d<200){p.x+=dx/d*.6;p.y+=dy/d*.6}p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+  cx.fillStyle=`rgba(${a},.7)`;cx.beginPath();cx.arc(p.x,p.y,1.8,0,6.3);cx.fill();
+  for(let j=i+1;j<pts.length;j++){const q=pts[j],l=Math.hypot(p.x-q.x,p.y-q.y);if(l<130){cx.strokeStyle=`rgba(${a},${.28*(1-l/130)})`;cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}}})}
+ if(!rm)requestAnimationFrame(draw)}
+draw();
+})();
+</script>
+</body>
+</html>
