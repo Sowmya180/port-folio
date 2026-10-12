@@ -49,6 +49,18 @@ h1 .o{-webkit-text-stroke:1.5px var(--a);color:transparent}
 .role{font:600 clamp(1.1rem,2.6vw,1.7rem) var(--d);margin:1.6rem 0 .6rem}
 .role em{font-style:normal;color:var(--a);display:inline-block;min-width:6.4ch}
 .vp{max-width:46ch;color:var(--mu);margin-bottom:2rem}
+ .stack{
+  font:400 .95rem var(--b);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--mu);
+  margin-bottom:1.2rem;
+}
+.stack b{
+  color:var(--a);
+  font-weight:400;
+  margin:0 .5em;
+}
 .btns{display:flex;gap:1rem;flex-wrap:wrap}
 .btn{display:inline-block;padding:.9rem 1.7rem;border-radius:99px;font-weight:500;border:1px solid var(--a);transition:background .3s,box-shadow .3s;will-change:transform}
 .btn.p{background:var(--a);color:#fff;box-shadow:0 0 30px rgba(var(--ar),.4)}
@@ -130,10 +142,10 @@ footer{text-align:center;padding:2rem 1rem 3rem;color:var(--mu);font-size:.85rem
 <section id="hero">
  <canvas id="bg" aria-hidden="true"></canvas>
  <div class="av in" style="--i:0" aria-label="Avatar placeholder">SK</div>
- <h1><span class="in" style="--i:1">Sowmya K</span></h1>
+ <h1><span class="in" style="--i:1">Sowmya  K</span></h1>
  <p class="role in" style="--i:3"><em id="scr" data-w="Full-Stack">Full-Stack</em> Developer</p>
  <p class="vp in" style="--i:4">I build and ship production software across frontend, backend and database from enterprise SaaS to a high-traffic consumer site.</p>
- <div class="btns in" style="--i:5">
+<p class="stack in" style="--i:4">React<b>·</b>.NET Core<b>·</b>SQL Server<b>·</b>Angular<b>·</b>REST APIs</p> <div class="btns in" style="--i:5">
   <a class="btn p mag" href="#experience">See my work</a>
   <a class="btn mag" href="mailto:ksowmya1803@gmail.com">Get in touch</a>
  </div>
