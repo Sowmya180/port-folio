@@ -78,13 +78,6 @@ h1 .o{-webkit-text-stroke:1.5px var(--a);color:transparent}
  #skills .bento{grid-template-columns:repeat(6,1fr)}
  #skills .c1{grid-column:span 3}#skills .c2{grid-column:span 3}#skills .c3,#skills .c4{grid-column:span 2}#skills .c5{grid-column:span 2}#skills .c6{grid-column:span 6}
 }
-/* marquee */
-.mq{overflow:hidden;border-block:1px solid var(--line);padding:1.1rem 0;position:relative;z-index:1;background:rgba(var(--ar),.05)}
-.mt{display:flex;gap:3rem;width:max-content;animation:mq 38s linear infinite}
-.mq:hover .mt{animation-play-state:paused}
-.mt span{font:800 clamp(1.4rem,3vw,2.2rem) var(--d);white-space:nowrap;color:transparent;-webkit-text-stroke:1px var(--mu);transition:.3s}
-.mt span:hover{color:var(--a);-webkit-text-stroke-color:var(--a)}
-@keyframes mq{to{transform:translateX(-50%)}}
 /* projects */
 .pg{display:grid;gap:1rem}
 @media(min-width:820px){.pg{grid-template-columns:1.3fr 1fr 1fr}.pg .cell:first-child{grid-row:span 1}}
